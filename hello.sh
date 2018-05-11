@@ -3,7 +3,7 @@
 basepath=$(cd `dirname $0`; pwd)
 
 # screen
-cat ${basepath}/hello.md
+echo -e "$(cat ${basepath}/hello.md)"
 
 # loading
 
@@ -26,7 +26,7 @@ done
 while true
 do
   read temp
-  if [$temp];then
+  if $temp;then
     break
   fi
 done
