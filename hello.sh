@@ -7,20 +7,38 @@ cat ${basepath}/hello.md
 
 # loading
 
-# processbar <current> <total>  
-processbar() {  
-  local current=$1; local total=$2;  
-  local maxlen=80; local barlen=66; local perclen=14;  
-  local format="%-${barlen}s%$((maxlen-barlen))s"  
-  local perc="[$current/$total]"  
-  local progress=$((current*barlen/total))  
-  local prog=$(printf '['; for i in `seq 0 $progress`; do printf '★'; done)  
-  printf "\r$format" $prog $perc  
-}  
-  
-# Usage(Client)  
-for i in `seq 1 10`; do  
-  processbar $i 10  
-  sleep 1  
-done  
-echo ""  
+echo ""
+echo ""
+echo ""
+echo ""
+echo "       Now Loading ..."
+
+start="       [ "
+end=" ]"
+for i in $(seq 1 10)  
+do
+	prog=""
+
+	for ii in $(seq 1 $i)
+	do
+		prog="${prog}===="
+	done
+
+	prog="${prog}>"
+
+	if [ $i != "10" ]; then
+		let ip=$i+1
+		for iii in $(seq $ip 10)
+		do
+			prog="${prog}    "
+		done
+	fi
+
+	fin="${start}${prog}${end}"
+	echo -en "$fin $i\r"
+	sleep 0.1s
+done
+echo ""
+echo ""
+echo "                         [Enter]"
+read -n 1

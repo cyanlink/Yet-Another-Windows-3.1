@@ -25,7 +25,7 @@ ln -sf $basepath/_tmux.conf $HOME/.tmux.conf
 $cmd has -t $session 2> /dev/null
 
 if [ $? != 0 ]; then
-	$cmd new -d -n hello -s $session "sh ${basepath}/hello.sh; ${cmd} selectw -t ${session}:5"
+	$cmd new -d -n hello -s $session "zsh ${basepath}/hello.sh; ${cmd} selectw -t ${session}:5"
 	# -d detach other clients
 	# -s session name
 	# -n window name
@@ -33,7 +33,7 @@ if [ $? != 0 ]; then
 	# $cmd splitw -v -p 20 -t $session "pry" # debug
 	# $cmd neww -n cmus -t $session "cmus"
 	$cmd neww -n zsh -t $session "zsh"
-	$cmd splitw -h -p 50 -t $session "zsh"
+	$cmd splitw -h -p 50 -t $session "vim"
 	$cmd selectw -t $session:1
 fi
 
