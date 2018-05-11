@@ -34,6 +34,7 @@ ln -sf /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/_tmux.conf /Use
 
 * `d` 退出整个 TMUX
 * `&` 退出当前 Window
+* `q` 退出当前 Pane
 * `s` 窗口管理器
 
 ## Refer
