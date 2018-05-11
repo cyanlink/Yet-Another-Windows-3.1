@@ -8,6 +8,21 @@
 ```
 this is a read me of shell-practice
 
+# User
+
+### Dependencies
+
+* software
+	* tmux
+	* vim
+	* emacs
+	* ncdu
+* env
+	* python
+	* go
+
+# Dev
+
 * UI
 	* tmux
 	* ncurses
@@ -18,9 +33,16 @@ this is a read me of shell-practice
 	* emacs (game)
 	* cmus + musicbox + cava (music)
 
+## CMD
+
+* `wego -frontend emoji -l 39.961,116.350 -forecast-api-key 0656b207df72ebf3ed8f597c258ed731 -d 2`
+
 ## Note
 
 ### Dimpurr
+
+* http://blog.jobbole.com/41129/
+* https://www.csdn.net/article/1970-01-01/2807272
 
 ```bash
 cd /Users/dimpurr/Workflow/00Programing/Shell/shell-practice
