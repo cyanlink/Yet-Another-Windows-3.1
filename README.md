@@ -38,7 +38,16 @@ ln -sf /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/_tmux.conf /Use
 
 ## Refer
 
+* http://man.openbsd.org/OpenBSD-current/man1/tmux.1
+
 ### TMUX
+
+```bash
+new-session [-AdDEP] [-c start-directory] [-F format] [-n window-name] [-s session-name] [-t group-name] [-x width] [-y height] [shell-command]
+(alias: new)
+
+
+```
 
 * https://blog.csdn.net/robertbaker/article/details/42172203
 * https://github.com/xuxiaodong/tmuxen
