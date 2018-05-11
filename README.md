@@ -1,3 +1,12 @@
+```
+█╗   ██╗ █████╗ ██╗    ██╗
+╚██╗ ██╔╝██╔══██╗██║    ██║
+ ╚████╔╝ ███████║██║ █╗ ██║
+  ╚██╔╝  ██╔══██║██║███╗██║   'Yet Another Windows 3.1' v0.1
+   ██║   ██║  ██║╚███╔███╔╝   (c) Inkblot Art Academy
+   ╚═╝   ╚═╝  ╚═╝ ╚══╝╚══╝    (dimpurr, volgorabgle, cyanlink)
+```
+
 this is a read me of shell-practice~~
 
 * UI
@@ -9,6 +18,24 @@ this is a read me of shell-practice~~
 	* curls (weather)
 	* emacs (game)
 	* cmus + musicbox + cava (music)
+
+## Note
+
+### Dimpurr
+
+```bash
+cd /Users/dimpurr/Workflow/00Programing/Shell/shell-practice
+
+ln -sf /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/_tmux.conf /Users/dimpurr/.tmux.conf
+```
+
+#### 常用 TMUX 操作
+
+前缀按键： `Ctrl + A`
+
+* `d` 退出整个 TMUX
+* `&` 退出当前 Window
+* `s` 窗口管理器
 
 ## Refer
 
