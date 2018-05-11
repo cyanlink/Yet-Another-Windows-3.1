@@ -6,8 +6,7 @@
    ██║   ██║  ██║╚███╔███╔╝   (c) Inkblot Art Academy
    ╚═╝   ╚═╝  ╚═╝ ╚══╝╚══╝    (dimpurr, volgorabgle, cyanlink)
 ```
-
-this is a read me of shell-practice~~
+this is a read me of shell-practice
 
 * UI
 	* tmux
