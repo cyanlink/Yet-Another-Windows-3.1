@@ -3,7 +3,7 @@
 basepath=$(cd `dirname $0`; pwd)
 
 # screen
-cat ${basepath}/hello.md
+echo -e "$(cat ${basepath}/hello.md)"
 
 # loading
 
