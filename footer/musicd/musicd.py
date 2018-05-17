@@ -9,8 +9,8 @@ code = locale.getpreferredencoding()
 
 def base(musicd, test):
 
-	mplayer = subprocess.Popen("mplayer -really-quiet -slave -msglevel global=4 /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/main/playground/ignore/music/*", stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-	mplayer.stdin.write("pause \n")
+	mplayer = subprocess.Popen("mplayer -really-quiet -slave -msglevel global=4 -idle -input nodefault-bindings /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/main/playground/ignore/music/*", stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+	mplayer.stdin.write("pause\n")
 
 	# start
 	# musicd = curses.initscr()
