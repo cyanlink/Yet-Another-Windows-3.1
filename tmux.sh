@@ -44,11 +44,11 @@ if [ $? != 0 ]; then
 
 	# - footer
 	$cmd selectp -t $session:main.2
-	$cmd splitw -v -l 1 -t $session "echo 'footer'; read -1"
+	$cmd splitw -v -l 1 -t $session "zsh ${basepath}/footer/footer.sh"
 
 	# - main right
 	$cmd selectp -t $session:main.2
-	$cmd splitw -h -l 5 -t $session "zsh ${basepath}/sidebar/sidebar.sh"
+	$cmd splitw -h -l 3 -t $session "zsh ${basepath}/sidebar/sidebar.sh"
 	# -l size
 	# -p percentage
 	# -h horizontal split
