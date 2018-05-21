@@ -79,3 +79,7 @@ C-b & 关闭窗口
 C-b s 以菜单方式显示和选择会话
 C-b d 退出tumx，并保存当前会话，这时，tmux仍在后台运行，可以通过tmux attach进入 到指定的会话
 ```
+
+### VolgoRabgle
+
+* https://linux.cn/article-6423-1.html
