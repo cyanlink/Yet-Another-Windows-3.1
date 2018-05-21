@@ -3,7 +3,7 @@
 basepath=$(cd `dirname $0`; pwd)
 
 # screen
-cat ${basepath}/hello.md
+echo -e "$(cat ${basepath}/hello.md)"
 
 # loading
 
@@ -21,10 +21,10 @@ do
 
 	for ii in $(seq 1 $i)
 	do
-		prog="${prog}===="
+		prog="${prog}████"
 	done
 
-	prog="${prog}>"
+	prog="${prog}"
 
 	if [ $i != "10" ]; then
 		let ip=$i+1
@@ -36,7 +36,7 @@ do
 
 	fin="${start}${prog}${end}"
 	echo -en "$fin $i\r"
-	sleep 0.1s
+	sleep 0.05s
 done
 echo ""
 echo ""

@@ -1,5 +1,5 @@
 ```
-█╗   ██╗ █████╗ ██╗    ██╗
+█╗   ██╗ █████╗  ██╗    ██╗
 ╚██╗ ██╔╝██╔══██╗██║    ██║
  ╚████╔╝ ███████║██║ █╗ ██║
   ╚██╔╝  ██╔══██║██║███╗██║   'Yet Another Windows 3.1' v0.1
@@ -7,6 +7,21 @@
    ╚═╝   ╚═╝  ╚═╝ ╚══╝╚══╝    (dimpurr, volgorabgle, cyanlink)
 ```
 this is a read me of shell-practice
+
+# User
+
+### Dependencies
+
+* software
+	* tmux
+	* vim
+	* emacs
+	* ncdu
+* env
+	* python
+	* go
+
+# Dev
 
 * UI
 	* tmux
@@ -18,9 +33,20 @@ this is a read me of shell-practice
 	* emacs (game)
 	* cmus + musicbox + cava (music)
 
+## CMD
+
+* `wego -frontend emoji -l 39.961,116.350 -forecast-api-key 0656b207df72ebf3ed8f597c258ed731 -d 2`
+
 ## Note
 
 ### Dimpurr
+
+#### Linux tricks
+
+* http://blog.jobbole.com/41129/
+* https://www.csdn.net/article/1970-01-01/2807272
+
+#### Useful commands
 
 ```bash
 cd /Users/dimpurr/Workflow/00Programing/Shell/shell-practice
@@ -34,13 +60,18 @@ ln -sf /Users/dimpurr/Workflow/00Programing/Shell/shell-practice/_tmux.conf /Use
 
 * `d` 退出整个 TMUX
 * `&` 退出当前 Window
+* `q` 退出当前 Pane
 * `s` 窗口管理器
 
 ## Refer
 
-* http://man.openbsd.org/OpenBSD-current/man1/tmux.1
+### Curses & Ncurses
+
+* https://docs.python.org/3/library/curses.html#
 
 ### TMUX
+
+* http://man.openbsd.org/OpenBSD-current/man1/tmux.1
 
 ```bash
 new-session [-AdDEP] [-c start-directory] [-F format] [-n window-name] [-s session-name] [-t group-name] [-x width] [-y height] [shell-command]
