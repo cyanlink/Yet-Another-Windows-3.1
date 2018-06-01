@@ -116,7 +116,6 @@ C-b d 退出tumx，并保存当前会话，这时，tmux仍在后台运行，可
 
 * https://linux.cn/article-6423-1.html
 
-##################################################################################$
 ledger:
 
 An accounting system accessed from command-line.
@@ -132,11 +131,6 @@ ledger -f filename.dat register tags
     Liabilities:Fix    $-10.00
 
 ref: https://www.ledger-cli.org/
-
-##################################################################################$
-
-
-################################################################################################
 
 Taskwarrior:
 
@@ -155,6 +149,3 @@ done           Finish a task
 list           List the task list
 start          Mark a task is being dealt
 stop           Stop the Mark
-
-
-################################################################################################

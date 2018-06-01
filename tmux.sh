@@ -40,7 +40,7 @@ if [ $? != 0 ]; then
 	$cmd neww -n main -t $session "zsh ${basepath}/main/main.sh"
 	
 	# - header
-	$cmd splitw -b -v -l 2 -t $session "zsh ${basepath}/header/header.sh"
+	$cmd splitw -b -v -l 1 -t $session "zsh ${basepath}/header/header.sh"
 
 	# - footer
 	$cmd selectp -t $session:main.2

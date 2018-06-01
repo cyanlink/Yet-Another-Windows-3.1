@@ -98,29 +98,23 @@ def func(musicd, status, mplayer):
 		[height-3, 14, "[ ⏯  Play/Pause ]", "pause"],
 		[height-3, 34, "[ ⏭  Next ]", "pt_step 1"],
 		[height-3, 48, "[ ⏹  Stop ]", "seek 0 1\npause"],
-		[height-2, 14, "[ ⏪ Slow ]", "speed_incr -0.1'"],
-		[height-2, 26, "[ ⏩ Quick ]", "speed_incr +0.1"],
-		[height-2, 47, "🔊", "volume 0"],
-		[height-2, 51, "▂", "volume 0.2"],
-		[height-2, 53, "▃", "volume 0.4"],
-		[height-2, 55, "▅", "volume 0.6"],
-		[height-2, 57, "▆", "volume 0.8"],
-		[height-2, 59, "▇", "volume 1"]
+		[height-2, 8, "[ ⏪ Slow ]", "speed_incr -0.1'"],
+		[height-2, 20, "[ ⏩ Quick ]", "speed_incr +0.1"],
+		[height-2, 44, "🔊", "volume 0"],
+		[height-2, 47, "▂", "volume 0.2"],
+		[height-2, 49, "▃", "volume 0.4"],
+		[height-2, 51, "▅", "volume 0.6"],
+		[height-2, 53, "▆", "volume 0.8"],
+		[height-2, 55, "▇", "volume 1"]
 	]
-	musicd.addstr(height-2,0,"Speed                                    Volume")
+	musicd.addstr(height-2,0,"Speed                               Volume")
 	for i in range(len(btns_list)):
 		btn = btns_list[i]
-		btns(btns_list, musicd, status, btn[0], btn[1], btn[2], btn[3], i, mplayer)
-
-	mplayer.stdin.write("get_property speed\n")
-	# a = mplayer.stdout.read(0)
-	# mplayer.stdout.truncate()
-	a = mplayer.stdout.readline()[10:-4]
-	musicd.addstr(height-2,7, a)
+		btns(btns_list, musicd, status, btn[0], btn[1], btn[2], btn[3], i, mplayer, height)
 
 	musicd.refresh()
 
-def btns(btns_list, musicd, status, y, x, text, script, i, mplayer):
+def btns(btns_list, musicd, status, y, x, text, script, i, mplayer, height):
 	# highlight
 	if status[0] == y and status[1] >= x and status[1] <= x+len(text)-3:
 		musicd.attron(curses.color_pair(1))
@@ -129,6 +123,14 @@ def btns(btns_list, musicd, status, y, x, text, script, i, mplayer):
 
 		# enter
 		if status[2] == 10 or status[2] == 32:
+
+			# mplayer.stdin.write("get_property speed\n")
+			# # a = mplayer.stdout.read(0)
+			# # mplayer.stdout.truncate()
+			# a = mplayer.stdout.readline()[10:-4]
+			# musicd.addstr(height-2,7, a)
+			# # mplayer.stdin.write("pause\n")
+
 			# call(script,shell=True)
 			mplayer.stdin.write(script+'\n')
 			
@@ -136,7 +138,7 @@ def btns(btns_list, musicd, status, y, x, text, script, i, mplayer):
 		musicd.addstr(y, x, text)
 
 def main():
-	curses.wrapper(base, test=1)
+	curses.wrapper(base, test=0)
 
 main()
 
