@@ -113,4 +113,48 @@ C-b d 退出tumx，并保存当前会话，这时，tmux仍在后台运行，可
 
 ### VolgoRabgle
 
+
 * https://linux.cn/article-6423-1.html
+
+##################################################################################$
+ledger:
+
+An accounting system accessed from command-line.
+Creat a file end with '.dat' , use ledger to operte.
+
+command:
+ledger -f filename.dat balance
+ledger -f filename.dat register tags
+
+.dat file reference:
+2018/5/17 Volgo
+    Expenses:Gas       $10.00
+    Liabilities:Fix    $-10.00
+
+ref: https://www.ledger-cli.org/
+
+##################################################################################$
+
+
+################################################################################################
+
+Taskwarrior:
+
+A todo-list system accessed from command-line.
+Yet not find how does it works, but it doesn't matter.
+
+ref: https://taskwarrior.org/docs/commands/
+ref: https://taskwarrior.org/download/
+
+commmad useful:
+[start with 'task']
+add            Add a new task
+annotate       Add annotate to a task
+count          Count total number of all task [use "status:pending count" to count current task
+done           Finish a task
+list           List the task list
+start          Mark a task is being dealt
+stop           Stop the Mark
+
+
+################################################################################################
