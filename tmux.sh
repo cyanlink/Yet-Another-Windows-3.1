@@ -1,9 +1,7 @@
 #!/bin/sh
-#
 # name     : Yet Another Windows 3.1
 # author   : Inkblot Art Academy (dimpurr, volgorabgle, cyanlink)
 # license  : MIT
-#
 
 # --- init ---
 
