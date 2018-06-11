@@ -36,7 +36,7 @@ int main(int argc, char** argv)
             cout << "Game Start! Enter your answer:" << endl;
             times = 0;
             InitializeGame();//初始化游戏
-            cout << "The answer is: " << answer << endl; 
+//测试用答案输出语句         //cout << "The answer is: " << answer << endl; 
             //GetInput(input); //输入猜测值
             //检查猜测是否正确 不正确则给出提示 
             do{
