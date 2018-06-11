@@ -11,10 +11,12 @@ wegocmd="/Users/dimpurr/Workflow/00Programing/Go/bin/wego"
 #!/bin/bash
 # using select in the menu
 
-cowsay -f dragon " Welcome You ! "
+cat $basepath/start_screen.md
+echo ''
+echo ''
 
 PS3="Do you want: "
-select option in "[Control] Shell" "[Control] File" "[Control] Mission" "[Online] Internet" "[Online] BYRBBS" "[Net] Weather" "[Net] Netease Music" "[Play] Movie: Star War" "[Play] Game" "[Play] sl Train"
+select option in "[Control] Shell" "[Control] File" "[Control] Mission" "[Online] Internet" "[Online] BYRBBS" "[Net] Weather" "[Net] Netease Music" "[Play] Movie: Star War" "[Play] Game" "[Play] sl Train" "[Play] Guess The Number (C++)" "[Play] MORA (C++)"
 do
  case $option in
  "[Control] Shell")
@@ -37,6 +39,10 @@ do
  musicbox ;;
  "[Play] Movie: Star War")
  telnet towel.blinkenlights.nl ;;
+ "[Play] Guess The Number (C++)")
+ $basepath/gtng/game ;;
+ "[Play] MORA (C++)")
+ $basepath/mora/game ;;
  *)
  echo "Sorry, wrong selection";;
  esac
